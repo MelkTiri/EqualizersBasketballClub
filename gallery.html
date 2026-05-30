@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalizers - Gallery</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; text-align: center; }
+        header { background-color: #0033a0; color: #ffcc00; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-bottom: 4px solid #ffcc00; }
+        header img { height: 60px; }
+
+        /* The Tab Menu Styles */
+        nav { background-color: #002b80; display: flex; padding: 0 40px; justify-content: center; border-top: 4px solid #ffcc00; }
+        nav button { background: none; border: none; color: white; padding: 15px 30px; cursor: pointer; font-size: 18px; font-weight: bold; border-bottom: 4px solid transparent; transition: 0.3s; }
+        nav button:hover { color: #ffcc00; }
+        .active-btn { color: #ffcc00 !important; border-bottom: 4px solid #ffcc00 !important; }
+
+        h1.section-title { font-size: 28px; background-color: #002b80; color: #ffcc00; padding: 15px; margin: 20px auto; width: 80%; border: 4px solid black; }
+
+        .gallery-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .gallery-item { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 300px; object-fit: cover; border-radius: 5px; }
+        .gallery-item p { margin-top: 10px; font-weight: bold; color: #0033a0; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+        <h1>Equalizers</h1>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='Player.html'">Players</button>
+        <button onclick="window.location.href='Draws.html'">Match Draws</button>
+        <button onclick="window.location.href='Pictures.html'" class="active-btn">Gallery</button>
+    </nav>
+
+    <h1 class="section-title">Club Photo Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/SK5xWFvr/Equalizers-Mens-Team.jpg.jpeg" alt="Mens Team">
+            <p>The First Men's Side</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/cCG1b7Zt/Equalizers-Womens-Team.jpg.jpeg" alt="Womens Team">
+            <p>The First Women's Side</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Moments from the Court</h2>
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="https://i.postimg.cc/j5t79qDx/Whats-App-Image-2025-05-20-at-9-47-53-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/9Mb7j39G/Whats-App-Image-2025-05-20-at-9-47-54-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/J0dHGbP0/Whats-App-Image-2025-05-20-at-9-47-55-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/3rLvSTYh/Whats-App-Image-2025-05-20-at-9-47-56-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/RZtJZJfC/Whats-App-Image-2025-05-20-at-9-47-58-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/5tMYY9qB/Whats-App-Image-2025-05-20-at-9-47-59-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/FRT7Bytp/Whats-App-Image-2025-05-20-at-9-48-01-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/tJf7X94V/Whats-App-Image-2025-05-20-at-9-48-02-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/1RY80rr5/Whats-App-Image-2025-05-20-at-9-48-04-AM.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/g0WXfCkz/Screenshot-2026-05-27-231004.png"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/kGqdCyRV/Screenshot-2026-05-27-231045.png"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/hGQn1vqJ/Screenshot-2026-05-27-231220.png"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/Jz2mXJSW/Screenshot-2026-05-27-231304.png"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/CK0CjvXd/469936752-122158605314275616-1857287288568277251-n.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/RhWwM26X/519362963-122193195572275616-3992422408514210849-n.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/PJC1t0pr/535354973-122197937048275616-955184895757154452-n.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/kG2WnL68/536282485-122197938848275616-7061213551610889936-n.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/x1DL2x0v/609075513-122216322026275616-2701191698845822504-n.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/bvqbGZSy/IMG-20240504-WA0036.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/G22yQ6Qc/IMG-20240504-WA0038.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/Fzw31G0h/IMG-20240508-WA0001.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/W1L0vW2q/IMG-20240508-WA0004.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/qvV2Tbkx/IMG-20240508-WA0005.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/VkqnLqvw/IMG-20250512-WA0000.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/BvJD8jP1/IMG-20250512-WA0001.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/3w9G232Z/IMG-20250512-WA0003.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/ZqjN6J67/IMG-20250512-WA0004.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/Hxxy2Ft3/IMG-20250512-WA0007.jpg"></div>
+        <div class="gallery-item"><img src="https://i.postimg.cc/R0CRksRD/IMG-20250608-WA0003.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/Pf0SCMXs/IMG-20250727-WA0047.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/rwNjYXSm/IMG-20250727-WA0055.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/zGF7PZnv/IMG-20250727-WA0057.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/D0Gdrt2N/IMG-20250727-WA0062.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/909tdvmH/IMG-20250727-WA0066.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/BbFcTdS9/IMG-20250727-WA0070.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/5yzqBZ46/IMG-20250727-WA0071.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/QMnpRXCv/IMG-20250727-WA0072.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/MGG7Pc6f/IMG-20250727-WA0073.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/FKKyWfrL/IMG-20250727-WA0075.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/V6rjw3bv/IMG-20250727-WA0080.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/VLBXz95B/IMG-20250727-WA0081.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/qvJyqtCD/IMG-20250727-WA0086.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/y81cxJZ6/IMG-20250727-WA0087.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/NjdTHg60/IMG-20250823-WA0010.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/02xJX6ZJ/IMG-20250823-WA0012.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/ncZQSsTs/IMG-20250823-WA0013.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/9Fpw6WNK/IMG-20250823-WA0015.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/9Fpw6WNx/IMG-20250823-WA0016.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/wMk3YVFt/IMG-20250823-WA0017.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/VkZrNKwT/IMG-20260104-WA0098.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/Jh9sNtGL/IMG-20260104-WA0102.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/MKdXs9vL/IMG-20260104-WA0113.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/g2jj13h2/IMG-20260104-WA0116.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/vZTTC5n6/IMG-20260104-WA0118.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/TwMPyS4P/IMG-20260104-WA0121.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/2yC8GWYs/IMG-20260104-WA0122.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/VvzLgt1X/IMG-20260104-WA0141.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/YCv2dMcC/IMG-20260104-WA0148.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/LXpH4PJc/IMG-20260104-WA0151.jpg"></div>
+<div class="gallery-item"><img src="https://i.postimg.cc/j2qtPrQ7/IMG-20260107-WA0002.jpg
+"></div>
+    </div>
+
+    <footer style="padding: 40px; color: #666;">
+        &copy; 2026 Equalizers Basketball Club
+    </footer>
+</body>
+</html>

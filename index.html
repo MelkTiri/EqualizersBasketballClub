@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalizers Basketball Club - Official Site</title>
+    <style>
+        /* GLOBAL STYLES */
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; color: #333; }
+        header { background-color: #0033a0; color: #ffcc00; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-bottom: 4px solid #ffcc00; }
+        header img { height: 60px; }
+        header h1 { margin: 0; font-size: 1.8em; text-transform: uppercase; }
+
+        /* NAVIGATION */
+        nav { background-color: #002b80; display: flex; padding: 0 20px; sticky: top; }
+        nav button { background: none; border: none; color: white; padding: 15px 20px; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.3s; }
+        nav button:hover { background-color: #0047AB; color: #ffcc00; }
+        .active-btn { border-bottom: 3px solid #ffcc00; color: #ffcc00; }
+
+        /* SECTION CONTROL */
+        .content-section { display: none; padding: 20px; max-width: 1200px; margin: 0 auto; animation: fadeIn 0.5s; }
+        .active-section { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* HOME TAB STYLES */
+        .hero { background: #0047AB; color: yellow; padding: 50px 20px; border-radius: 15px; border: 6px solid black; text-align: center; }
+
+        /* PLAYERS TAB STYLES */
+        .player-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; }
+        .player-card { background: white; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-bottom: 4px solid #0033a0; }
+        .player-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+        .pos-tag { background: #ffcc00; color: #0033a0; padding: 3px 10px; border-radius: 15px; font-weight: bold; font-size: 0.8em; }
+
+        /* DRAWS & ADMIN STYLES */
+        .draw-container { background: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        #displayDraw { max-width: 100%; height: auto; border: 3px solid #0033a0; margin-top: 20px; border-radius: 8px; }
+        .admin-panel { background: #ffeeba; border: 2px dashed #856404; padding: 15px; margin-bottom: 20px; border-radius: 10px; }
+
+        footer { background: #0033a0; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+        <h1>Equalizers</h1>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+    </header>
+
+   <nav>
+        <button onclick="window.location.href='Equalizers_Website.html'"class="active-btn">Home</button>
+        <button onclick="window.location.href='Player.html'">Players</button>
+        <button onclick="window.location.href='Draws.html'">Match Draws</button>
+        <button onclick="window.location.href='gallery.html'">Gallery</button>
+    </nav>
+
+
+    <section id="home" class="content-section active-section">
+        <div class="hero">
+            <h1>Welcome to the Equalizers</h1>
+            <p>Official page of the Equalizers Basketball Club - Port Moresby, PNG.</p>
+        </div>
+        <div style="margin-top: 20px; line-height: 1.6;">
+            <h2>About the Club</h2>
+            <p>Equalizers Basketball Club was founded and created in the backyard of the De La Salle community. The club took part in the Port Moresby Basketball association competition for two seasons making it to the grand final in 2025.</p>
+        </div>
+    </section>
+
+    <section id="players" class="content-section">
+        <h2>Player Profiles</h2>
+        <div class="player-grid">
+            <div class="player-card"><img src="https://i.postimg.cc/ryhh0jJW/2025061918082030.jpg" alt="Player"><h3>Agnes Urupua</h3><span class="pos-tag">Point Guard</span></div>
+            <div class="player-card"><img src="https://i.postimg.cc/7brw7xyw/2025061418350663.jpg" alt="Player"><h3>Joshua Pomat</h3><span class="pos-tag">Center</span></div>
+            <div class="player-card"><img src="https://i.postimg.cc/66kvznW5/2025061418155983.jpg" alt="Player"><h3>Tommy Masi</h3><span class="pos-tag">Shooting Guard</span></div>
+            <div class="player-card"><img src="https://i.postimg.cc/RhKq2pSC/2025061423014210.jpg" alt="Player"><h3>Tiriman Masi</h3><span class="pos-tag">Power Forward</span></div>
+            </div>
+    </section>
+
+    <section id="draws" class="content-section">
+        <div class="admin-panel">
+            <strong>Admin: Update Draw Image

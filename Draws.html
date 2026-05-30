@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draws - Equalizers Basketball</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+/* The Tab Menu Styles */
+        nav { background-color: #002b80; display: flex; padding: 0 40px; justify-content: center; border-top: 4px solid #ffcc00; }
+        nav button { background: none; border: none; color: white; padding: 15px 30px; cursor: pointer; font-size: 18px; font-weight: bold; border-bottom: 4px solid transparent; transition: 0.3s; }
+        nav button:hover { color: #ffcc00; }
+        .active-btn { color: #ffcc00 !important; border-bottom: 4px solid #ffcc00 !important; }
+
+        /* Header Styling */
+        header {
+            background-color: #0033a0;
+            color: #ffcc00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header img { height: 60px; }
+
+        /* Navigation Menu */
+        nav { background-color: #002b80; display: flex; padding-left: 20px; }
+        .menu { position: relative; }
+        .menu-button {
+            background-color: #002b80; color: white; padding: 15px 20px;
+            border: none; cursor: pointer; font-size: 16px;
+        }
+        .menu-content {
+            display: none; position: absolute; background-color: white;
+            min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1;
+        }
+        .menu-content a { color: #002b80; padding: 12px 16px; text-decoration: none; display: block; }
+        .menu:hover .menu-content { display: block; }
+
+        /* Admin Section */
+        .admin-panel {
+            background-color: #fff3cd;
+            border: 2px dashed #856404;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        /* Draw Display Area */
+        .draw-container {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #matchDrawImg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .upload-label {
+            background-color: #0033a0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        input[type="file"] { display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+        <h1>Equalizers Basketball</h1>
+        <img src="https://i.postimg.cc/bJRJCRn4/equalizers-logo-resized.png" alt="Logo">
+    </header>
+
+   <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='Player.html'">Players</button>
+        <button onclick="window.location.href='Draws.html'" class="active-btn">Match Draws</button>
+        <button onclick="window.location.href='gallery.html'">Gallery</button>
+    </nav>
+
+            
+        </div>
+    </nav>
+
+    <div class="admin-panel">
+        <h3>Admin: Upload New Draw</h3>
+        <p>Select a photo of the new schedule to update the page.</p>
+        <label for="upload" class="upload-label">Choose Image</label>
+        <input type="file" id="upload" accept="image/*">
+    </div>
+
+    <div class="draw-container">
+        <h1>Official Match Draws</h1>
+        <img id="matchDrawImg" src="https://i.postimg.cc/HLwrRSxh/IMG-20250428-WA0006.jpg" alt="Match Draw">
+    </div>
+
+    <script>
+        const uploadInput = document.getElementById('upload');
+        const drawImage = document.getElementById('matchDrawImg');
+
+        // This function triggers when a file is selected
+        uploadInput.onchange = function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    // Update the image source to the selected file
+                    drawImage.src = e.target.result;
+                }
+                
+                reader.readAsDataURL(file);
+                alert("Draw updated for this view!");
+            }
+        };
+    </script>
+
+</body>
+</html>
